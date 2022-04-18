@@ -1,0 +1,391 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/trillion.jpeg') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+#stoic-logo{
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Heading 1 */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Stoic certified message */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Stoic logo */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* Call US message */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+#xs-deliver{
+  text-align: center;
+}
+
+#call-btn > a{  /* This is for the calling number to show up in extra small devices */
+  font-size: 1.5em;
+  display: block; /* This helps to get round edges for the div element or to be more specific the box in which the number is stored in*/
+  margin: 0 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #f6b319;
+  color: #951c49;
+}
+
+/* Giving the jumbotron a default value of some parameters as we might dont want to repeat these things in every single one of the media queries */
+.container .jumbotron{
+      box-shadow: 0 0 50px #3F0C1F;
+      border: 2px solid #3F0C1F;
+}
+
+/*  Styling the bottom menu i.e menu,specials,maps */
+#menu-tile, #specials-tile, #map-tile{
+  height: 250px;
+  width: 100%;  /* This doesn't means the width of the screen but it's the width of their container element which would be the grids i.e col-md-4 col-sm-6 col-xs-12*/
+  margin-bottom: 15px;  /* This would be very much effective when the menu-tile , specials-tile and map-tile */ 
+  position: relative; /* This is used so that the span elements inside these div elements which are used for text can be overlayed on these tiles as they would be set to absolute positioning */
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+
+}
+#menu-tile:hover , #specials-tile:hover, #map-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc; /* Used for producing a shadow when the user hovers over the meny-tile, specials-tile or the map-tile */
+}
+#menu-tile{
+  background: url('../images/private.jpg') no-repeat;
+  background-position: center;
+
+
+  width: 330px;             /* We are taking this width and margin to get the tile images in the middle for extra small devices like iphone 4 etc because there is no way to resize the background image of our tiles i.e - menu ,specials ,map as the images are just the background images and not some other element inside a container element which we can resize to fully fit in the container element*/      
+  margin: 0 auto 15px auto;
+}
+#specials-tile{
+  background: url('../images/mansion.jpg') no-repeat;
+  background-position: center;
+  
+  width: 330px;             /* We are taking this width and margin to get the tile images in the middle for extra small devices like iphone 4 etc because there is no way to resize the background image of our tiles i.e - menu ,specials ,map as the images are just the background images and not some other element inside a container element which we can resize to fully fit in the container element*/  
+  margin: 0 auto 15px auto;
+}
+#map-tile{
+  width: 330px;             /* We are taking this width and margin to get the tile images in the middle for extra small devices like iphone 4 etc because there is no way to resize the background image of our tiles i.e - menu ,specials ,map as the images are just the background images and not some other element inside a container element which we can resize to fully fit in the container element*/  
+  margin: 0 auto 15px auto;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{ /* We will be targeting the span tags of the menu , specials and the map tile to set their position to absolute in order to bring them at the bottom of the tile images */
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #FFF;
+  opacity: .8; /*Makes the span text transparent */
+}
+
+
+
+
+/*Here we'll shrink the image a bit in the medium size devices to fit in and perfunctorily align the menus along with the resturant name . Note all the widths taken are exact copy of what bootstrap uses for different device sizes*/
+  /* For large devies */
+  @media (min-width: 1200px){
+     .container .jumbotron{
+      background: url('../images/back.jpg') no-repeat;
+      height: 675px;
+    }
+  }
+
+  /* For Medium devices */
+  @media (min-width: 992px) and (max-width: 1199px){
+    #logo-img{    /* Here we shrink the image for medium size devices */
+      background: url('../images/trillion.jpeg') no-repeat;
+      width: 100px;
+      height: 100px;
+      margin: 5px 5px 5px 0px;
+    }
+     .container .jumbotron{
+      background: url('../images/back.jpg') no-repeat;
+      height: 558px;
+    }
+    
+  }
+
+  /*For small devices */
+
+  @media (min-width: 768px) and (max-width: 991px){
+     .container .jumbotron{
+      background: url('../images/back.jpg');
+      height: 432px;
+    }
+    #map-tile{
+      width: 100%;
+    }
+  }
+
+  /* For extra small devices */
+
+  @media (max-width: 767px){
+    /*Header*/
+    .navbar-brand{
+      padding-top: 10px;
+      height: 80px;
+    }
+    /*Club name */
+    .navbar-brand h1 {
+      padding-top: 10px;
+      font-size: 5vw;  /* 1vw = 1% of viewpirt width . It is a responsive design which basically streches the content according to the screen width*/ 
+    }
+    .navbar-brand p {
+    
+      font-size: .6em;
+      margin-top: 12px;
+    }
+    .navbar-brand p img {
+      height: 20px;
+    }
+    #collapsable-nav a{ /* We used this to enlarge the texts inside the menu column in mobile view i.e Menu , About , Awards but this would also enlarge the glyphicons icons as they are also a part of id collapsable-nav -> a*/
+      font-size: 1.2em;
+    }
+    #collapsable-nav a span{ /* This would keep the glyphicon of the same size as the menus mentioned by multiplying the current font-size which would be 1.2em from above to 1em which would result in 1.2em i.e no change in font-size*/
+      font-size: 1em;
+      margin-right: 5px; /*Would give margin between the glyphicon and the text for the menu */
+    }
+    .container .jumbotron{ /*We do this because the bootstrap has defines its jumbotron class this way and we have to override this in order to remove the unneccassary borders that we're getting */
+      background: url('../images/back.jpg');
+      margin-top: 30px;
+      padding: 0;
+    }
+    #menu-tile{
+      background: url('../images/privatexs.jpg') no-repeat;
+      background-position: center;
+      
+    }
+    #specials-tile{
+      background: url('../images/mansionxs.jpg') no-repeat;
+      background-position: center;
+    }
+
+
+    /*Here we'll arrange the footer for display in the small devices */
+    .panel-footer section{
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .panel-footer section:nth-child(3){
+      margin-bottom: 0; /* Margin already exists in the whole row */
+    }
+    .panel-footer section hr{
+      width: 50%;
+    }
+
+    .menu-item-photo {
+      margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price{
+      text-align: center;
+    }
+    .menu-item-description{
+      text-align: center;
+    }
+    
+  }
+
+  /* For very very small devices like iphone 4 */
+  @media (max-width: 479px){
+
+    /* Tweaking the header name i.r The trillionaire's club a little bit to make it look bigger and preserve some padding */
+    .navbar-brand h1{
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+    .col-xxs-12{
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 100%;
+    }
+  }
+/* END HEADER */
+
+/*Footer of the website is designed after this */
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 35px;  /* Helps to give some space within its footer elements itself */
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0 ;  /* We do this because we dont want the border at the top of the footer section */
+}
+
+.panel-footer div.row{
+  margin-bottom: 35px;
+}
+#hours,#address{
+  line-height: 2;
+}
+#hours>span , #address>span{
+  font-size: 1.3em;
+}
+#address p>span{
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials{
+  font-style: italic;
+  margin-top: 25px;
+}
+
+/* END OF THE HOMEPAGE */
+
+/* Menu-categories PAGE design */
+.category-tile{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px splid #3F0C1F;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+.category-tile span{
+  position: absolute;
+  color: red;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  opacity: .8;
+  color: #fff;
+}
+.category-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title + div{   /* This here would target the div sibling of menu-categories-title which is "Subsituting weariness with exuberance" text */
+  margin-bottom: 50px;
+}
+
+/* End of menu categories page design */
+
+/* Start of single-catefory html page */
+.menu-item-tile{
+  margin-bottom: 25px;
+}
+.menu-item-tile hr{   /* This is being used to style the hr or the horizontal line that would be visible when the screen size goes to small */
+  width: 80%;
+}
+.menu-item-tile .menu-item-price{
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.menu-item-tile .menu-item-price span{
+  font-size: 0.6em;
+}
+.menu-item-photo{
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;  /* We are doing this so that the next column elements come a little closer to the current column ones as we have the "details" text on the right side of each column */
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: ghostwhite;
+  text-align: center;
+  color: gold;
+}
+.menu-item-description{
+  padding-right: 30px;
+  padding-top: 10px;
+}
+h3.menu-item-title{
+  margin: 0 0 10px;
+}
+.menu-item-details{
+  font-size: .9em;
+  font-style: italic;
+}
+

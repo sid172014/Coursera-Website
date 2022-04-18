@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.gm oogleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <img src="images/trillion.jpeg" alt="Stoic certification" id="logo-img">
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>The trillionaire's Club</h1></a>
+            <p>
+              <img src="images/stoic.jpeg" alt="Stoic certification" id="stoic-logo">
+              <span>Stoic Certified</span>
+            </p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home
+              </a>
+            </li>
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>6201483923</span></a><div>*Give us a Call</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+    <div id="call-btn" class="visible-xs">
+      <a class="btn" href="tel:6201483923">
+        <span class="glyphicon glyphicon-earphone"></span>
+        6201483923
+      </a>
+    </div>
+    <div id="xs-deliver"  class="text center visible-xs"> *Call us</div>
+
+    <!-- For the main content of background photo of the web page -->
+    <div id="main-content" class="container">
+      <div class="jumbotron">
+        <img src="images/back.jpg" alt="Picture of resturant" class="img-responsive visible-xs"> <!-- here we specify the background image should be a responsive one and it should be only visible in extra small devices -->
+      </div>
+
+      <div id="home-tiles" class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <!-- The href filler in this is taken out via the google map share or embed a map button all we have to do is just paste the share link in the href element tag and also get the iframe text tag and put it directly inside the div element tag as shown below-->
+          <a href="https://goo.gl/maps/bTkYp6LPtDeniE1s6" target="_blank"><div id="map-tile"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179628.0450592106!2d-82.42493655095122!3d38.898702405104636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884a54a5d4cb0945%3A0xbb00c768decd3a43!2sWest%20Virginia%2C%20USA!5e0!3m2!1sen!2sin!4v1648842664786!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>Map</span></div></a>
+        </div>
+      </div> <!-- End of home tiles -->
+    </div> <!-- End of main-content -->
+
+
+    <!-- From here we'll start designing the footer of the website -->
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row"> <!-- We are doing this because we want to divide the footer into three sections i.e hours, address, testimonials -->
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br>
+             Every single minute of your life <br>
+             Waste none of your precious time <br>
+             <hr class="visible-xs">    <!--This horizontal line would only appear when the screen size is extra small -->
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br>
+            <p><span>BetSid's Palace</span><br>
+            Washington DC</p>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>He really is a man with a heart ?</p>
+          </section>
+        </div>
+        <div class="text-center">&copy; Copyright The Trillionaire's Club 2022</div>
+      </div>
+    </footer>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

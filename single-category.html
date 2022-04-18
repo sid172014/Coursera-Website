@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <img src="images/trillion.jpeg" alt="Stoic certification" id="logo-img">
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>The trillionaire's Club</h1></a>
+            <p>
+              <img src="images/stoic.jpeg" alt="Stoic certification" id="stoic-logo">
+              <span>Stoic Certified</span>
+            </p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home
+              </a>
+            </li>
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>6201483923</span></a><div>*Give us a Call</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+    <div id="call-btn" class="visible-xs">
+      <a class="btn" href="tel:6201483923">
+        <span class="glyphicon glyphicon-earphone"></span>
+        6201483923
+      </a>
+    </div>
+    <div id="xs-deliver"  class="text center visible-xs"> *Call us</div>
+
+
+
+
+    <!-- Desgining the main content of the single-category page -->
+   	<div id="main-content" class="container">
+   		<h2 id="menu-categories-title" class="text-center">Trillionaire's Shopping Hub</h2>
+   		<div class="text-center">If you are not rich enough, Please leave this website</div>
+
+   		<section class="row">
+   			<div class="menu-item-tile col-md-6">
+
+   				<div class="row"> <!-- Notice we are creating a grid inside another grid layout of -->
+   					<div class="col-sm-5"> <!-- NOTICE the reason we chose small here is because we want to display the photo and its details horizontally when the screen size is small,medium and large and below that we want it to stack so once the screen size goes below 'col-sm' or small screen size , the photo and its details would stack one upon the other -->
+   						<div class="menu-item-photo">	<!-- We will create this class because we want to style every single photo the same way -->
+   							<div>D01</div>
+   							<img src="images/boat.jpg" width="250px" height="150px" class="img-responsive" alt="Item"> <!-- The img-responsive class makes the image specified to change its length and breadth i.e their dimensions according to the width of the browser -->
+   						</div>
+   						<div class="menu-item-price">$150 Trillion <span> (pint)</span> $160 Trillion <span>(quart)</span></div>
+   					</div>
+   					<div class="menu-item-description col-sm-7">
+   						<h3 class="menu-item-title">Rolls Royce Phantom</h3>
+   						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   					</div>
+   				</div>
+
+   			<hr class="visible-xs"> 
+   			</div>
+
+   			<div class="menu-item-tile col-md-6">
+
+   				<div class="row"> <!-- Notice we are creating a grid inside another grid layout of -->
+   					<div class="col-sm-5"> <!-- NOTICE the reason we chose small here is because we want to display the photo and its details horizontally when the screen size is small,medium and large and below that we want it to stack so once the screen size goes below 'col-sm' or small screen size , the photo and its details would stack one upon the other -->
+   						<div class="menu-item-photo">	<!-- We will create this class because we want to style every single photo the same way -->
+   							<div>D02</div>
+   							<img src="images/boat.jpg" width="250" height="150" class="img-responsive" alt="Item"> <!-- The img-responsive class makes the image specified to change its length and breadth i.e their dimensions according to the width of the browser -->
+   						</div>
+   						<div class="menu-item-price">$150 Trillion <span> (pint)</span> $160 Trillion <span>(quart)</span></div>
+   					</div>
+   					<div class="menu-item-description col-sm-7">
+   						<h3 class="menu-item-title">Rolls Royce Phantom</h3>
+   						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   					</div>
+   				</div>
+
+   			<hr class="visible-xs"> 
+   			</div>
+
+   			<div class="clearfix visible-md-block visible-lg-block"></div> 	<!-- We are using this to have a similar effect like clear property in Normal float html property as this is the bootstrap way of having the clear property -->
+
+   			<div class="menu-item-tile col-md-6">
+
+   				<div class="row"> <!-- Notice we are creating a grid inside another grid layout of -->
+   					<div class="col-sm-5"> <!-- NOTICE the reason we chose small here is because we want to display the photo and its details horizontally when the screen size is small,medium and large and below that we want it to stack so once the screen size goes below 'col-sm' or small screen size , the photo and its details would stack one upon the other -->
+   						<div class="menu-item-photo">	<!-- We will create this class because we want to style every single photo the same way -->
+   							<div>D03</div>
+   							<img src="images/boat.jpg" width="250" height="150" class="img-responsive" alt="Item"> <!-- The img-responsive class makes the image specified to change its length and breadth i.e their dimensions according to the width of the browser -->
+   						</div>
+   						<div class="menu-item-price">$150 Trillion <span> (pint)</span> $160 Trillion <span>(quart)</span></div>
+   					</div>
+   					<div class="menu-item-description col-sm-7">
+   						<h3 class="menu-item-title">Rolls Royce Phantom</h3>
+   						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   					</div>
+   				</div>
+
+   			<hr class="visible-xs"> 
+   			</div>
+
+   			<div class="menu-item-tile col-md-6">
+
+   				<div class="row"> <!-- Notice we are creating a grid inside another grid layout of -->
+   					<div class="col-sm-5"> <!-- NOTICE the reason we chose small here is because we want to display the photo and its details horizontally when the screen size is small,medium and large and below that we want it to stack so once the screen size goes below 'col-sm' or small screen size , the photo and its details would stack one upon the other -->
+   						<div class="menu-item-photo">	<!-- We will create this class because we want to style every single photo the same way -->
+   							<div>D04</div>
+   							<img src="images/boat.jpg" width="250" height="150" class="img-responsive" alt="Item"> <!-- The img-responsive class makes the image specified to change its length and breadth i.e their dimensions according to the width of the browser -->
+   						</div>
+   						<div class="menu-item-price">$150 Trillion <span> (pint)</span> $160 Trillion <span>(quart)</span></div>
+   					</div>
+   					<div class="menu-item-description col-sm-7">
+   						<h3 class="menu-item-title">Rolls Royce Phantom</h3>
+   						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   					</div>
+   				</div>
+
+   			<hr class="visible-xs"> 
+   			</div>
+
+   			<div class="menu-item-tile col-md-6">
+
+   				<div class="row"> <!-- Notice we are creating a grid inside another grid layout of -->
+   					<div class="col-sm-5"> <!-- NOTICE the reason we chose small here is because we want to display the photo and its details horizontally when the screen size is small,medium and large and below that we want it to stack so once the screen size goes below 'col-sm' or small screen size , the photo and its details would stack one upon the other -->
+   						<div class="menu-item-photo">	<!-- We will create this class because we want to style every single photo the same way -->
+   							<div>D05</div>
+   							<img src="images/boat.jpg" width="250" height="150" class="img-responsive" alt="Item"> <!-- The img-responsive class makes the image specified to change its length and breadth i.e their dimensions according to the width of the browser -->
+   						</div>
+   						<div class="menu-item-price">$150 Trillion <span> (pint)</span> $160 Trillion <span>(quart)</span></div>
+   					</div>
+   					<div class="menu-item-description col-sm-7">
+   						<h3 class="menu-item-title">Rolls Royce Phantom</h3>
+   						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   					</div>
+   				</div>
+
+   			<hr class="visible-xs"> 
+   			</div>
+
+   			<div class="menu-item-tile col-md-6">
+
+   				<div class="row"> <!-- Notice we are creating a grid inside another grid layout of -->
+   					<div class="col-sm-5"> <!-- NOTICE the reason we chose small here is because we want to display the photo and its details horizontally when the screen size is small,medium and large and below that we want it to stack so once the screen size goes below 'col-sm' or small screen size , the photo and its details would stack one upon the other -->
+   						<div class="menu-item-photo">	<!-- We will create this class because we want to style every single photo the same way -->
+   							<div>D06</div>
+   							<img src="images/boat.jpg" width="250" height="150" class="img-responsive" alt="Item"> <!-- The img-responsive class makes the image specified to change its length and breadth i.e their dimensions according to the width of the browser -->
+   						</div>
+   						<div class="menu-item-price">$150 Trillion <span> (pint)</span> $160 Trillion <span>(quart)</span></div>
+   					</div>
+   					<div class="menu-item-description col-sm-7">
+   						<h3 class="menu-item-title">Rolls Royce Phantom</h3>
+   						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   					</div>
+   				</div>
+
+   			<hr class="visible-xs"> 
+   			</div>
+
+   			<div class="menu-item-tile col-md-6">
+
+   				<div class="row"> <!-- Notice we are creating a grid inside another grid layout of -->
+   					<div class="col-sm-5"> <!-- NOTICE the reason we chose small here is because we want to display the photo and its details horizontally when the screen size is small,medium and large and below that we want it to stack so once the screen size goes below 'col-sm' or small screen size , the photo and its details would stack one upon the other -->
+   						<div class="menu-item-photo">	<!-- We will create this class because we want to style every single photo the same way -->
+   							<div>D07</div>
+   							<img src="images/boat.jpg" width="250" height="150" class="img-responsive" alt="Item"> <!-- The img-responsive class makes the image specified to change its length and breadth i.e their dimensions according to the width of the browser -->
+   						</div>
+   						<div class="menu-item-price">$150 Trillion <span> (pint)</span> $160 Trillion <span>(quart)</span></div>
+   					</div>
+   					<div class="menu-item-description col-sm-7">
+   						<h3 class="menu-item-title">Rolls Royce Phantom</h3>
+   						<p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   					</div>
+   				</div>
+
+   			<hr class="visible-xs"> 
+   			</div>
+   		</section>
+   	</div>
+
+
+
+    <!-- From here we'll start designing the footer of the website -->
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row"> <!-- We are doing this because we want to divide the footer into three sections i.e hours, address, testimonials -->
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br>
+             Every single minute of your life <br>
+             Waste none of your precious time <br>
+             <hr class="visible-xs">    <!--This horizontal line would only appear when the screen size is extra small -->
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br>
+            <p><span>BetSid's Palace</span><br>
+            Washington DC</p>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>He really is a man with a heart ?</p>
+          </section>
+        </div>
+        <div class="text-center">&copy; Copyright The Trillionaire's Club 2022</div>
+      </div>
+    </footer>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
